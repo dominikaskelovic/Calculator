@@ -1,0 +1,3 @@
+C:\Users\Dominik\source\repos\calculator\calculator\Debug\calculator.vcxprojAssemblyReference.cache
+C:\Users\Dominik\source\repos\calculator\calculator\Debug\calculator.MyForm.resources
+C:\Users\Dominik\source\repos\calculator\calculator\Debug\calculator.vcxproj.GenerateResource.cache
