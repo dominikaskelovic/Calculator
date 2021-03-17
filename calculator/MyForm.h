@@ -46,6 +46,7 @@ namespace calculator {
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::ComboBox^ comboBox1;
+	private: System::Windows::Forms::Button^ infoButton;
 
 	private:
 		/// <summary>
@@ -70,6 +71,7 @@ namespace calculator {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->infoButton = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// textBox1
@@ -185,11 +187,22 @@ namespace calculator {
 			this->comboBox1->Text = L"plus";
 			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::comboBox1_SelectedIndexChanged);
 			// 
+			// infoButton
+			// 
+			this->infoButton->Location = System::Drawing::Point(12, 397);
+			this->infoButton->Name = L"infoButton";
+			this->infoButton->Size = System::Drawing::Size(315, 38);
+			this->infoButton->TabIndex = 10;
+			this->infoButton->Text = L"Information";
+			this->infoButton->UseVisualStyleBackColor = true;
+			this->infoButton->Click += gcnew System::EventHandler(this, &MyForm::infoButton_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(339, 403);
+			this->ClientSize = System::Drawing::Size(339, 459);
+			this->Controls->Add(this->infoButton);
 			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->button2);
@@ -267,6 +280,9 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void infoButton_Click(System::Object^ sender, System::EventArgs^ e) {
+	// bla bla bla some information
 }
 };
 }
